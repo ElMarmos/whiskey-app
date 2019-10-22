@@ -48,7 +48,7 @@ public class WhiskeyRecordBoImpl implements WhiskeyRecordBo {
         List<Persons> persons = personsRepository.findAll();
         int avgCupsPerPerson = records.size() / persons.get(persons.size() - 1).getNumber();
         int last10Minutes = whiskeyRecordRepository.findAllByRecordAfter(LocalDateTime.now().minusMinutes(10)).size();
-        int numberOfBottles = records.size() / 6;
+        int numberOfBottles = records.size() / 16;
 
 
         return new DashboardDTO(records.size(), chartValues, avgCupsPerPerson, last10Minutes, numberOfBottles);
