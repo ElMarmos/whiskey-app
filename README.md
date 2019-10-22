@@ -1,6 +1,7 @@
 Whiskey Counter
 ===
 
+La URL de los endpoints es http://energy.pitia.co/
 
 | Method | Endpoint                    | Service                                        |
 | ------ | --------------------------- | ---------------------------------------------- |
